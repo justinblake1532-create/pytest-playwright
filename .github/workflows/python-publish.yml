@@ -34,5 +34,5 @@ jobs:
       if: ${{ ! cancelled() }}
       with:
         name: playwright-report
-        path: tests/
+        path: ~/Projects/TestingPractice/PytestPlaywright/tests/
         retention-days: 30
