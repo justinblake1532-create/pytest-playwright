@@ -30,7 +30,7 @@ jobs:
       run: pytest --tracing=retain-on-failure
 
     - name: Upload test results
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@main
       if: always() # Ensures reports are uploaded even if tests fail
       with:
         name: playwright-report
